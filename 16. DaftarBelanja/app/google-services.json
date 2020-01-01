@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "819311599786",
+    "firebase_url": "https://daftarbelanja-19a28.firebaseio.com",
+    "project_id": "daftarbelanja-19a28",
+    "storage_bucket": "daftarbelanja-19a28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819311599786:android:274992dfc576ff52c3f0d3",
+        "android_client_info": {
+          "package_name": "lutfiana.net.daftarbelanja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819311599786-tuvdgem4ps1r71gl91b0r2fjrcnrjetb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lutfiana.net.daftarbelanja",
+            "certificate_hash": "93e6554057082f6e2777a6f696ffa45571d86e12"
+          }
+        },
+        {
+          "client_id": "819311599786-nibkgp3eo6oapjnb7gehftajdt4q9fqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy53wWTxX_BNQ38v1g_zu8XtmK603VOV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819311599786-nibkgp3eo6oapjnb7gehftajdt4q9fqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

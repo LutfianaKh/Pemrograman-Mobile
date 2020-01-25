@@ -46,13 +46,11 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String mEmail = email.getText().toString().trim();
                 String mPass = pass.getText().toString().trim();
-
                 if(TextUtils.isEmpty(mEmail)){
                     email.setError("Email harus diisi!");
                     return;
                 }
-
-                if(TextUtils.isEmpty(mPass)){
+                if(TextUtils.isEmpty(mPass)) {
                     pass.setError("Password harus diisi!");
                     return;
                 }
@@ -60,23 +58,21 @@ public class RegistrationActivity extends AppCompatActivity {
                 mDialog.setMessage("Processing...");
                 mDialog.show();
 
-                mAuth.createUserWithEmailAndPassword(mEmail, mPass).addOnCompleteListener( new OnCompleteListener<AuthResult>() {
+                mAuth.createUserWithEmailAndPassword(mEmail, mPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                            Toast.makeText(getApplicationContext(),"Sucessfull..", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Successful..", Toast.LENGTH_SHORT).show();
                             mDialog.dismiss();
-                        }else {
+                        } else {
                             Toast.makeText(getApplicationContext(), "Failed...", Toast.LENGTH_SHORT).show();
                             mDialog.dismiss();
                         }
-
                     }
                 });
             }
         });
-
 
         SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
